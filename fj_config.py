@@ -9,7 +9,7 @@ import time
 from pathlib import Path
 
 PLUGIN_NAME = "fujiang-dsh"
-PLUGIN_VERSION = "0.5.2"
+PLUGIN_VERSION = "0.5.3"
 
 # SOUL.md 托管块（幂等替换，块外的用户内容一律不动）
 SOUL_BEGIN = "<!-- fujiang-dsh:hermes:begin -->"
