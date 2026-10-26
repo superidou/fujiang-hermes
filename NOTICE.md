@@ -24,6 +24,17 @@
 - 新增 `prompt/kernel.md`（≤4000 字符的内核段），上游没有对应文件。
 - 新增 `hermes fujiang {status,install,uninstall,prompt,skills,profile,bank,refresh,verify,recover}` 管理命令。
 
+## 许可证适用范围
+
+| 路径 | 许可证 | 文件 |
+|---|---|---|
+| `*.py`、`skills/`、`tests/`、`.github/` | MIT | [LICENSE](LICENSE) |
+| `prompt/*.md` | CC BY-NC-SA 4.0 | [LICENSE-CC-BY-NC-SA-4.0.md](LICENSE-CC-BY-NC-SA-4.0.md) |
+| `upstream/` | 上游原样，见 `upstream/LICENSE` | — |
+
+GitHub 侧识别为 MIT（仓库根 `LICENSE`）；`prompt/` 的非商业约束以
+`LICENSE-CC-BY-NC-SA-4.0.md` 为准，两者不冲突：代码可商用（MIT），提示词不可商用（CC）。
+
 ## 安全提示
 
 `skills/` 里是**红队/渗透测试**技能，故意包含反弹 shell、隧道、爆破、WebShell 用例。
