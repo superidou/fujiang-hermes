@@ -1,4 +1,6 @@
-# fujiang-dsh · Hermes 插件
+# 富江破甲 · fujiang-hermes
+
+> Hermes 插件名仍是 `fujiang-dsh`（`hermes fujiang …` 命令、`SOUL.md` 标记、命名空间 `fujiang-dsh:*` 都不变，改名会破坏已装用户的托管块）。
 
 把 [c3cvld7aag/fujiang-dsh](https://github.com/c3cvld7aag/fujiang-dsh)（DeepSeek Harness 的
 Cordis 插件）的「富江」人格提示词架构移植到 [Hermes Agent](https://github.com/NousResearch/hermes-agent)，
@@ -19,7 +21,7 @@ Cordis 插件）的「富江」人格提示词架构移植到 [Hermes Agent](htt
 
 ```bash
 # 从 GitHub 直装（推荐）
-hermes plugins install <owner>/fujiang-dsh
+hermes plugins install superidou/fujiang-hermes
 
 # 本地目录（开发时）
 hermes plugins enable fujiang-dsh
