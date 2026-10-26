@@ -1,0 +1,24 @@
+# 运行时状态 / 本地历史 — 不进仓库
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# 本地快照与"最后已知良好"副本（个人 rollback 链，非发布内容）
+prompt.snapshots/
+prompt.lastgood/
+
+# 上游评分器的中间产物
+upstream/tests/runs/
+runs/
+node_modules/
+
+# 运行时状态（$HERMES_HOME/fujiang-dsh/ 镜像进来的拷贝）
+bank_baseline.json
+refusal-state.json
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,17 @@
+name: fujiang-dsh
+version: 0.5.0
+description: "fujiang-dsh 破甲 v0.5.0（富江）Hermes port：严格对齐上游 c3cvld7aag/fujiang-dsh 的富江提示词架构（提示词与上游完全同步：身份=富江、激活词回复「爸爸，我在」、无群号首行前缀、黑名单、10 条 Scoped Rules、Intent Mapping、四层阶梯、首行锚点、重试、Thinking&Quality、病娇风格），落到 Hermes 系统提示内核段 + SOUL.md 托管块，附带 23 个 MIT 血统红队技能（源自 dsh-purge，署名保留）、反拒答重试与 hermes fujiang 管理命令。"
+author: "c3cvld7aag (fujiang-dsh, CC BY-NC-SA 4.0) + YuJunZhiXue (dsh-purge, MIT), Hermes plugin port"
+license: "CC BY-NC-SA 4.0"
+homepage: https://github.com/c3cvld7aag/fujiang-dsh
+requires_hermes: ">=0.21"
+provides_hooks:
+  - pre_llm_call
+  - post_llm_call
+  - on_session_start
+provides_tools: []
+tags:
+  - prompt
+  - jailbreak
+  - redteam
+  - identity
