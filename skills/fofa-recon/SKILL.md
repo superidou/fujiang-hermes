@@ -1,6 +1,6 @@
 ---
 name: fofa-recon
-description: "用 FOFA API 批量测绘靶标资产（域名/IP/端口/标题/指纹）；内置限速客户端，严格单线程 + 最小间隔 +。"
+description: "用 FOFA API 批量测绘靶标资产（域名/IP/端口/标题/指纹）；内置限速客户端：单线程 + 最小间隔 + 指数退避。"
 version: 1.4.2
 author: YuJunZhiXue (dsh-purge), Hermes plugin port
 license: MIT

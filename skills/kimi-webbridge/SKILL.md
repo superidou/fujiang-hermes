@@ -1,6 +1,6 @@
 ---
 name: kimi-webbridge
-description: "用月之暗面 Kimi 浏览器扩展（WebBridge）驱动用户真实 Chrome/Chromium：导航、读取页面、点。"
+description: "用月之暗面 Kimi 浏览器扩展（WebBridge）驱动用户真实 Chrome/Chromium：导航、读取页面、点击填表、执行 JS 抓接口。"
 version: 1.4.2
 author: YuJunZhiXue (dsh-purge), Hermes plugin port
 license: MIT

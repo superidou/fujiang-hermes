@@ -101,6 +101,10 @@ class TestSkills(unittest.TestCase):
             self.assertGreaterEqual(len(desc), 15, f"{path} 的 description 太短，路由信号不足")
             self.assertRegex(desc, r"[。.]$", f"{path} 的 description 未完整收句（像是被截断）")
             self.assertEqual(desc.count("（"), desc.count("）"), f"{path} 的 description 括号不配对")
+            # 收句前不能停在连接符或单字上（"+。"、"、点。" 这类截断以句号结尾，上面两条断言抓不到）
+            body = desc.rstrip("。.！!”\"")
+            tail = re.split(r"[、，,/＋+：（(；;]", body)[-1].strip()
+            self.assertGreaterEqual(len(tail), 2, f"{path} 的 description 末尾片段「{tail}」过短，疑似截断")
 
 
 class TestHygiene(unittest.TestCase):
